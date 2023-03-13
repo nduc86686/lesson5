@@ -116,7 +116,7 @@ console.log(formattedUrl); // https://www.example.com/path?id=123
 ```
 Hàm ```url.format()``` sẽ tạo ra một URI từ một object chứa các thành phần của ```URI```.
 
-###IP, TCP, UDP trong nodejs 
+##IP, TCP, UDP trong nodejs 
 Trong Node.js, các giao thức ```IP (Internet Protocol)```, ```TCP (Transmission Control Protocol)``` và ```UDP (User Datagram Protocol)``` được hỗ trợ bởi module ```net```.
 
 Module ```net``` cung cấp các lớp Socket để tạo kết nối mạng, cho phép gửi và nhận dữ liệu thông qua các giao thức này.
