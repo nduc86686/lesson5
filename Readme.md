@@ -35,6 +35,7 @@ console.log('Server listening on port 8080');
 ```
 **Đoạn mã trên tạo ra một máy chủ HTTP lắng nghe trên cổng 8080. Khi một khách hàng gửi yêu cầu HTTP đến máy chủ, hàm callback trong phương thức createServer sẽ được gọi và bạn có thể xử lý yêu cầu đó trong đó.**
 ##Http và Https trong nodejs 
+
 Trong Node.js, bạn có thể sử dụng module http và https để tạo ra các máy chủ web HTTP và HTTPS.
 
 Module http cho phép bạn tạo một máy chủ web HTTP đơn giản và cung cấp các phương thức để xử lý yêu cầu HTTP từ các máy khách. Ví dụ:
@@ -77,7 +78,9 @@ console.log('Server running at https://localhost:3000/');
 ```
 Trong ví dụ trên, chúng ta sử dụng module fs để đọc các tệp chứng chỉ SSL/TLS từ đĩa và chuyển chúng vào tùy chọn để tạo máy chủ HTTPS.
 
-###URI trong nodejs
+
+#URI trong nodejs
+
 Trong Node.js, ``URI`` (Uniform Resource Identifier) được xử lý bằng module url. Module này cung cấp các hàm để phân tích và xây dựng các ```URI```.
 
 Ví dụ, để phân tích một ```URI```, bạn có thể sử dụng hàm ```url.parse()``` như sau:
@@ -117,6 +120,7 @@ console.log(formattedUrl); // https://www.example.com/path?id=123
 Hàm ```url.format()``` sẽ tạo ra một URI từ một object chứa các thành phần của ```URI```.
 
 ##IP, TCP, UDP trong nodejs 
+
 Trong Node.js, các giao thức ```IP (Internet Protocol)```, ```TCP (Transmission Control Protocol)``` và ```UDP (User Datagram Protocol)``` được hỗ trợ bởi module ```net```.
 
 Module ```net``` cung cấp các lớp Socket để tạo kết nối mạng, cho phép gửi và nhận dữ liệu thông qua các giao thức này.
@@ -168,6 +172,7 @@ Trong đoạn code trên, một socket ```UDP``` được tạo và liên kết 
 Để sử dụng giao thức ```IP```, bạn có thể sử dụng lớp``` net.Socket ```và thiết lập type là ```raw```. Tuy nhiên, việc sử dụng giao thức ```IP``` trực tiếp yêu cầu kiến thức về lập trình mạng chuyên sâu và không phải là phần của phổ thông của ```Node.js```.
 
 ##Querystring trong nodejs
+
 Query string là một chuỗi các tham số được truyền vào URL. Ví dụ:
 
 
