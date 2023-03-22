@@ -3,9 +3,10 @@ const https = require('https');
 const fs = require('fs');
 
 // Đọc file chứng chỉ SSL và khóa cá nhân
-const options = {
-    key: fs.readFileSync('/path/to/private/key.pem'),
-    cert: fs.readFileSync('/path/to/certificate.pem')
+var options = {
+    key: fs.readFileSync('./key.pem', 'utf8'),
+    cert: fs.readFileSync('./cert.pem', 'utf8'),
+    passphrase: '123456789'
 };
 
 // Tạo server sử dụng SSL bằng module https.createServer()
